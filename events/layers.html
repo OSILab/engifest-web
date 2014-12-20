@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+.layer1
+{
+background:yellow;
+top:0px;
+left:0px;
+height:100%;
+width:100%;
+position:fixed;
+border:5px solid black;
+visibility:inherent;
+opacity:0.5;
+}
+.layer2
+{
+background: url(paper.jpg);
+color: white;
+position:fixed;
+top:0px;
+left:0px;
+height:100%;
+width:100%;
+border:5px solid red;
+visibility:hidden;
+opacity:0.5;
+}
+
+.divlayer1
+{
+color:white;
+height:300px;
+width:300px;
+position:relative;
+background:url(487885.jpg);
+padding:10px;
+margin:10px;
+}
+.divlayer2
+{
+color:white;
+height:300px;
+width:300px;
+position:relative;
+background:url(1907533.jpg);
+padding:10px;
+margin:10px;
+}
+</style>
+<script src="jquery-1.11.1.js"></script>
+<script src="neww.js"></script>
+</head>
+<body>
+<div id="maindiv" class="layer1">
+<a href="#" id='div1'><div class="divlayer1">
+hiii there...
+</div></a>
+<a href="#" id='div2'><div class="divlayer2">
+bye there...
+</div></a>
+</div>
+<div id="hiddendiv" class="layer2">
+</div>
+
+</body>
+</html>

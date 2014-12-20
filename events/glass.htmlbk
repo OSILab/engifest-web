@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section --></head>
+	<body bgcolor="gray">
+		<div class="demo" id="eventname">
+		    <h2>Event Name</h2>    
+        	<div class="show-off" id="ename"></div>
+        </div>
+        <div class="demo" id="eventinfo">
+		    <h2>Info</h2>
+        	<div class="show-off" id="einfo"></div>
+        </div>
+        <div class="demo" id="eventgallery">
+		     <h2>Gallery</h2>	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<script type="text/javascript" src="engine0/wowslider.js"></script>
+	<script type="text/javascript" src="engine0/script.js"></script>
+	<!-- End WOWSlider.com BODY section --> 
+        	<div class="show-off" id="egallery"></div>
+        </div>
+    
+
+
+        
+
+   
+	</body>
+</html>
