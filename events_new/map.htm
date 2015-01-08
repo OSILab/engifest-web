@@ -1,0 +1,198 @@
+<html>
+<head>
+<title> map </title>
+<style>
+#img{
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: -50;
+    opacity: 0.6;
+   
+}
+
+#img1div{
+    
+   
+}
+#img2div{
+     
+}
+#img3.div{
+      
+   
+}
+
+#img1{
+  top: 100px;
+}
+
+#img2{
+        top: 100px;
+}
+
+#img3{
+    top: 100px;
+}
+.i{
+    visibility: hidden;
+}
+
+
+.f1{
+    visibility: visible;
+    position: fixed;
+    top: 400px;
+    right: 400px;
+    z-index: -30;
+
+    transition: 2s; /* Opera *//**/
+}
+
+.f2{
+    visibility: visible;
+    position: fixed;
+    top: 500px;
+    right: 500px;
+    z-index: -30;
+
+    transition: 2s; /* Opera *//**/
+}
+
+.f3{
+    visibility: visible;
+    position: fixed;
+    top: 600px;
+    right: 600px;
+    z-index: -30;
+
+    transition: 2s; /* Opera *//**/
+}
+.zoom1{
+    transform:scale(2,2) translate(150px,150px);
+    -ms-transform:scale(2,2) translate(150px,150px); /* IE 9 */
+    -moz-transform:scale(2,2) translate(150px,150px); /* Firefox */
+    -webkit-transform:scale(2,2) translate(150px,150px); /* Safari and Chrome */
+    -o-transform:scale(2,2)  translate(150px,150px);
+
+    transition: transform 2s; /* Opera *//**/
+    
+
+}
+
+.zoom2{
+    transform:scale(2,2) translate(-150px,-150px);
+    -ms-transform:scale(2,2) translate(-150px,-150px); /* IE 9 */
+    -moz-transform:scale(2,2) translate(-150px,-150px); /* Firefox */
+    -webkit-transform:scale(2,2) translate(-150px,-150px); /* Safari and Chrome */
+    -o-transform:scale(2,2)  translate(-150px,-150px);
+
+    transition: transform 2s; /* Opera *//**/
+    
+
+}
+
+.zoom3{
+    transform:scale(2,2) translate(-50px,-50px);
+    -ms-transform:scale(2,2) translate(-50px,-50px); /* IE 9 */
+    -moz-transform:scale(2,2) translate(-50px,-50px); /* Firefox */
+    -webkit-transform:scale(2,2) translate(-50px,-50px); /* Safari and Chrome */
+    -o-transform:scale(2,2)  translate(-50px,150px);
+
+    transition: transform 2s; /* Opera *//**/
+    
+
+}
+.zoomout{
+    transform:scale(1) ;
+    -ms-transform:scale(1) ; /* IE 9 */
+    -moz-transform:scale(1) ; /* Firefox */
+    -webkit-transform:scale(1) ; /* Safari and Chrome */
+    -o-transform:scale(1); /* Opera */
+    transition: transform 2s;
+
+}
+</style>
+</head>
+
+<body>
+    <div id="img" >
+    <img src="map.png">
+</div>
+	
+   
+    <div id="img1" >
+        <pre>
+
+let this be the place where the first element of timeline will be displayed
+
+        </pre>
+    </div>
+    <div id="img2" >
+        <pre>
+
+let this be the place where the second element of timeline will be displayed
+
+        </pre>
+            </div>
+    <div id="img3" >
+    <pre>
+
+let this be the place where the third element of timeline will be displayed
+
+    </pre>
+    </div>
+ <div id="img4" >
+    <img  id="q" class="i" src="marker.jpeg">
+</div>
+
+
+
+<script>
+'use strict';
+
+
+function funca1()
+{
+    console.log("Inside funca1");
+    var w=document.getElementById('img');
+    w.className="zoom1";
+    document.getElementById('q').className="f1";
+}
+
+function funca2()
+{
+    console.log("Inside funca2");
+    var w=document.getElementById('img');
+    w.className="zoom2";
+    document.getElementById('q').className="f2";
+}
+function funca3()
+{
+    console.log("Inside funca3");
+    var w=document.getElementById('img');
+    w.className="zoom3";
+    document.getElementById('q').className="f3";
+}
+function func2()
+{
+    console.log("Inside func2");
+     var w=document.getElementById('img');
+    w.className="zoomout";
+    document.getElementById('q').className="i";
+}
+
+//document.getElementById('l').onclick=func;
+document.getElementById('img1').addEventListener('mouseover',funca1);
+document.getElementById('img2').addEventListener('mouseover',funca2);
+document.getElementById('img3').addEventListener('mouseover',funca3);
+
+
+document.getElementById('img1').addEventListener('mouseout',func2);
+document.getElementById('img2').addEventListener('mouseout',func2);
+document.getElementById('img3').addEventListener('mouseout',func2);
+</script>
+
+</body>
+</html>
