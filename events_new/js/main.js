@@ -13,7 +13,7 @@ window.scrollTo(0, 0);
 			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
 		}
 	});
-
+    
 	//on scrolling, show/animate timeline blocks when enter the viewport
 	$(window).on('scroll', function demo(){
 		$timeline_block.each(function(){
@@ -35,5 +35,5 @@ window.scrollTo(0, 0);
 
 	});
 	setTimeout(demo,1000);
-
+    window.scrollTo(0,20);
 });

@@ -26,7 +26,6 @@ $('#cd-timeline').find('a').on('click',function(e){
 e.preventDefault();
 $('.common').not(this).find('*').fadeOut(0);
 $('.cd-timeline-img').find('*').fadeOut(0);
-$('.cd-date').find('*').text("");
 $(this).addClass('scroll');
 
 
