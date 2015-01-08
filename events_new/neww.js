@@ -24,23 +24,14 @@ $(document).ready(function(e){
 */	
 $('#cd-timeline').find('a').on('click',function(e){
 e.preventDefault();
-$('.common').not(this).find('*').fadeOut(0);
-$('.cd-timeline-img').find('*').fadeOut(0);
+$('.common').not(this).find('*').fadeOut('slow');
+$('.cd-timeline-img').find('*').fadeOut('slow');
 $(this).addClass('scroll');
-
-
-
 });
-/*$('.cd-timeline-content').hover(function()
-{
-$('.circ1').css("visibility" ,"visible").css("transform" ,"scale(1.3)");
+
+$('.header').slideDown(500);
 
 
-},
-function()
-{
-$('.circ1').css("visibility" ,"hidden").css("transform" ,"scale(1)");
-});	*/
 		  
 /*$('#cd-timeline').find('a').on('click',function(e){
 e.preventDefault();
