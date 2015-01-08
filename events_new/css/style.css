@@ -163,7 +163,7 @@ Main components
     background-color: black;
     opacity: 1;
     z-index: 500;
-    
+
   }
 
 @-webkit-keyframes cd-bounce-1 {
@@ -462,7 +462,7 @@ Main components
 
 .bg{
   /*background-image: url("dj.jpg");*/
-  background-color: #575757;
+  background-color: #161713;
   position: fixed;
   top: 0px;
   height: 900px;
@@ -503,7 +503,7 @@ Main components
   color: white;
   border: transparent;
   border-radius: 0px;
-  box-shadow: inset 0 30px rgba(255,255,255,0.2), 
+  box-shadow: inset 0 35px rgba(255,255,255,0.2), 
             inset 0 -15px 30px rgba(0,0,0,0.4),
                   0 5px 10px rgba(0,0,0,0.5);
   overflow: hidden;
@@ -545,7 +545,7 @@ Main components
 }
 .cd-timeline-content:hover
 {
-
+    cursor: default;
 }
 
 /****************see more******************************/
@@ -557,8 +557,7 @@ Main components
   top: -45px;
   position: absolute;
   background-color: #39382e;
-  visibility: hidden;
-  opacity: 0.6;
+  opacity: 0;
   transition: 0.3s ease-in-out;
 }
 
@@ -569,9 +568,8 @@ Main components
   left: 26%;
   top: -45px;
   position: absolute;
-  background-color: #2a2b25;
-  visibility: hidden;
-  opacity: 0.6;
+  background-color: #171814;;
+  opacity: 0;
   transition: 0.3s ease-in-out;
 }
 .see-more{
@@ -581,10 +579,10 @@ Main components
   left: 26%;
   top: -45px;
   position: absolute;
-  background-color: #171814;
-  visibility: hidden;
+  background-color: black;
   opacity: 0;
   transition: visibility 0.3s ease-out;
+  cursor: pointer;
   }
 
 .overlay{
@@ -596,43 +594,42 @@ Main components
   left: 0px;
   top: 0px;
   border-radius: 0px;
-  visibility: hidden;
+  opacity: 0;
   transition:  0.3s ease-in-out;
 }
 
 
 
 #more{
-  visibility: hidden;
+  opacity: 0;
   position: absolute;
-  left: 39%;
-  top: 50%;
+  left: 41%;
+  top: 42%;
   font-size: 28px;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .cd-timeline-content:hover .see-more{
-  visibility: visible;
-  opacity: 1;
-  
-}
+  opacity: 0.8;
+  }
 
 .cd-timeline-content:hover .overlay{
-  visibility: visible;
+  opacity: 0.5;
 }
 
 .cd-timeline-content:hover .circ1{
-  visibility: visible;
+  opacity: 0.6;
   transform: scale(2.2);
 }
 
 .cd-timeline-content:hover .circ2{
-  visibility: visible;
+  opacity: 0.6;
   transform: scale(1.15);
 }
 
 .cd-timeline-content:hover #more{
-  visibility: visible;
+  opacity: 1;
 }
 
 /*****************************************************/
