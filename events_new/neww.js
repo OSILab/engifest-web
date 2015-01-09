@@ -24,7 +24,7 @@ $(document).ready(function(e){
 */	
 $('#cd-timeline').find('a').on('click',function(e){
 e.preventDefault();
-$('.common').not(this).find('*').fadeOut('slow');
+$('.common').find('*').fadeOut('slow');
 $('.cd-timeline-img').find('*').fadeOut('slow');
 $(this).addClass('scroll');
 });

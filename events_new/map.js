@@ -28,19 +28,47 @@ function func2()
     document.getElementById('q').className="i";
 }
 
+// function foo()
+// {
+//     console.log("inside foo");
+//     document.getElementById('big-container').className='expand';
+// }
+
 //document.getElementById('l').onclick=func;
-document.getElementById('div1').addEventListener('mouseover',funca1);
-document.getElementById('div2').addEventListener('mouseover',funca2);
-document.getElementById('div3').addEventListener('mouseover',funca3);
-document.getElementById('div4').addEventListener('mouseover',funca1);
-document.getElementById('div5').addEventListener('mouseover',funca2);
-document.getElementById('div6').addEventListener('mouseover',funca3);
+// document.addEventListener('DOMContentLoaded',function(){
+
+//     document.getElementById('div1').onclick=foo();
+
+// });
+
+function fuy()
+{
+    $("#big-container").addClass('expand');
+}
+$("#div1").click(function()
+{
+
+    console.log("inside foo");
+    //$("#big-container").css('visibility','visible');
+    //$("#big-container").css('height','450px');
+    $("#big-container").removeClass('shrink');
+    setInterval(fuy,5000);
+    
+      
+});
+ 
+// document.getElementById('div1').addEventListener('mouseover',funca1);
+// document.getElementById('div2').addEventListener('mouseover',funca2);
+// document.getElementById('div3').addEventListener('mouseover',funca3);
+// document.getElementById('div4').addEventListener('mouseover',funca1);
+// document.getElementById('div5').addEventListener('mouseover',funca2);
+// document.getElementById('div6').addEventListener('mouseover',funca3);
 
 
-document.getElementById('div1').addEventListener('mouseout',func2);
-document.getElementById('div2').addEventListener('mouseout',func2);
-document.getElementById('div3').addEventListener('mouseout',func2);
+// document.getElementById('div1').addEventListener('mouseout',func2);
+// document.getElementById('div2').addEventListener('mouseout',func2);
+// document.getElementById('div3').addEventListener('mouseout',func2);
 
-document.getElementById('div4').addEventListener('mouseout',func2);
-document.getElementById('div5').addEventListener('mouseout',func2);
-document.getElementById('div6').addEventListener('mouseout',func2);
+// document.getElementById('div4').addEventListener('mouseout',func2);
+// document.getElementById('div5').addEventListener('mouseout',func2);
+// document.getElementById('div6').addEventListener('mouseout',func2);

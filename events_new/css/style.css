@@ -84,7 +84,28 @@ Main components
     margin-left: -2px;
   }
 
+#big-container{
+  
+  position: absolute;
+  width: 700px;
+  height: 10px;
 
+  top: -50px;
+  margin-left: 60px;
+  background-color: red;
+  visibility: visible;
+  border-radius: 0.25em;
+  padding: 1em;
+  
+  transistion: height 10s;
+
+}
+
+
+.expand{
+  visibility:visible;
+  height: 400px;
+}
 .cd-timeline-block {
   position: relative;
   margin: 2em 0;
