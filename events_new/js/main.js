@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
 			}
 
 	
-			if( $(this).offset().top <= $(window).scrollTop()  - 100 ) {
+			if( $(this).offset().top <= $(window).scrollTop()  ) {
 				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('bounce-in').addClass('is-hidden');
 			}
 
