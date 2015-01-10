@@ -41,24 +41,82 @@ function func2()
 
 // });
 
-function fuy()
-{
-    $("#big-container").addClass('expand');
-}
+// $(."see-more").click(function()
+// {
+//     var i = 0;
+//     while( (child = child.previousSibling) != null ) 
+//     i++;
+// if(i%2==0)
+// {
+//     $("#big-container").removeClass('shrink').addClass('e1Left');
+//     $("#big-container").addClass('expandLeft');
+//  }
+//  else 
+//  {
+//     $("#big-container").removeClass('shrink').addClass('e1Right');
+//     $("#big-container").addClass('expandRight');
+//  }     
+// });
 $("#div1").click(function()
 {
 
     console.log("inside foo");
-    //$("#big-container").css('visibility','visible');
-    //$("#big-container").css('height','450px');
-    $("#big-container").removeClass('shrink');
-    setInterval(fuy,5000);
-    
+    $("#big-container").removeClass('shrink').addClass('e1Left');
+    $("#big-container").addClass('expandLeft');
       
 });
- 
-// document.getElementById('div1').addEventListener('mouseover',funca1);
-// document.getElementById('div2').addEventListener('mouseover',funca2);
+$("#div2").click(function()
+{
+
+    console.log("inside foo");
+    $("#big-container").removeClass('shrink').addClass('e1Right');
+    $("#big-container").addClass('expandRight');
+      
+});$("#div3").click(function()
+{
+
+    console.log("inside foo");
+    $("#big-container").removeClass('shrink').addClass('e1Left');
+    $("#big-container").addClass('expandLeft');
+      
+});$("#div4").click(function()
+{
+
+    console.log("inside foo");
+    $("#big-container").removeClass('shrink').addClass('e1Right');
+    $("#big-container").addClass('expandRight');
+      
+});$("#div5").click(function()
+{
+
+    console.log("inside foo");
+    $("#big-container").removeClass('shrink').addClass('e1Left');
+    $("#big-container").addClass('expandLeft');
+      
+});$("#div6").click(function()
+{
+
+    console.log("inside foo");
+    $("#big-container").removeClass('shrink').addClass('e1Right');
+    $("#big-container").addClass('expandRight');
+      
+});$("#div7").click(function()
+{
+
+    console.log("inside foo");
+    $("#big-container").removeClass('shrink').addClass('e1Left');
+    $("#big-container").addClass('expandLeft');
+      
+});$("#div8").click(function()
+{
+
+    console.log("inside foo");
+    $("#big-container").removeClass('shrink').addClass('e1Right');
+    $("#big-container").addClass('expandRight');
+      
+}); 
+document.getElementById('div1').onclick=funca1;
+document.getElementById('div2').onclick=funca2;
 // document.getElementById('div3').addEventListener('mouseover',funca3);
 // document.getElementById('div4').addEventListener('mouseover',funca1);
 // document.getElementById('div5').addEventListener('mouseover',funca2);
