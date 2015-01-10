@@ -14,8 +14,8 @@ jQuery(document).ready(function(){
 	});
     
 	//on scrolling, show/animate timeline blocks when enter the viewport
-	$(window).on('scroll', function demo(){
-		$timeline_block.each(function(){
+	$(window).on('scroll', function(){
+		$timeline_block.delay(800).each(function(){
 			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
 				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
 			}
@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
 			}
 
 	
-			if( $(this).offset().top <= $(window).scrollTop()  ) {
+			if( $(this).offset().top <= $(window).scrollTop() ) {
 				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('bounce-in').addClass('is-hidden');
 			}
 
@@ -33,6 +33,6 @@ jQuery(document).ready(function(){
 
 
 	});
-	setTimeout(demo,1000);
+	
   
 });
