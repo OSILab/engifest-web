@@ -4,9 +4,8 @@ $('#bc').click(function()
 {
 $('.cd-timeline-block').find('*').fadeIn('slow');
 $('.cd-timeline-img').find('*').fadeIn('slow');
-  parent=$(this).closest('.cd-timeline-content');
-    index_=$('.cd-timeline-content').index(parent);
-        if(index_%2==0)
+  
+        if($('#big-container').hasClass('e1Left expandLeft'))
     {
         $("#big-container").removeClass('e1Left expandLeft').addClass('shrink');
         
