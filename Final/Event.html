@@ -1,0 +1,47 @@
+<?php require_once("includes/connection.php"); ?>
+<?php require_once("includes/functionss.php"); ?>
+<?php
+
+			$id=$_GET['id'];
+			$query = "SELECT * from events 
+						where event_id={$id}     
+						";
+						if(!$result = $db->query($query)){
+							die('There was an error running the query [' . $db->error . ']');
+							}
+						else{
+								
+								$row=$result->fetch_assoc();
+								$event_id=$row['event_id'];
+                                $event_date=$row['date'];
+								$event_venue=$row['venue'];
+								$description=$row['description'];
+								$name=$row['event_name'];
+								$result->free();
+							}
+?>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+	<div class="bg">
+    </div>
+    <div class="pattern">
+    </div>
+	    <div class="event">
+	    	<?php echo"<h1>{$name}</h1>";?>
+	    	<div class="info">
+			<?php 
+	  echo"<h2>event date: {$event_date}</br>";
+	  echo"<h2>event venue: {$event_venue}</br>";
+	  echo"<h2>description: {$description}</br>";
+?>
+			</div>
+	    	<div class="gallery">
+	    		Gallery images here
+	    	</div>
+
+	    </div>
+	</body>
+</html>
