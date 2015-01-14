@@ -6,14 +6,14 @@ $('.cd-timeline-block').find('*').fadeIn('slow');
 $('.cd-timeline-img').find('*').fadeIn('slow');
   parent=$(this).closest('.cd-timeline-content');
     index_=$('.cd-timeline-content').index(parent);
-    if(index_%2==0)
+        if(index_%2==0)
     {
-        $("#big-container").removeClass('e1Left').removeClass('expandLeft').addClass('shrink');
+        $("#big-container").removeClass('e1Left expandLeft').addClass('shrink');
         
     }
     else
     {
-    	$("#big-container").removeClass('e1Right').removeClass('expandRight').addClass('shrink');
+    	$("#big-container").removeClass('e1Right expandRight').addClass('shrink');
     
     }
  $(".co").empty();

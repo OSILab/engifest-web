@@ -92,11 +92,11 @@ Main components
   top: 85px;
   margin-left: 0px;
   /*background-color: red;*/
- 
+  
   border-radius: 0.25em;
   padding: 1em;
-  -webkit-transition: opacity 3s;
-  transistion: opacity 3s;
+  -webkit-transition: opacity 2s;
+  transistion: opacity 2s;
   overflow: hidden;
  
 }

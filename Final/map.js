@@ -71,7 +71,7 @@ $('.see-more, #more').click(function(){
         $('.co').append($(this).attr('ename'));
         $('.date').append($(this).attr('date'));
         $('.cd-timeline-block').find('*').fadeOut('slow');
-$('.cd-timeline-img').find('*').fadeOut('slow');
+        $('.cd-timeline-img').find('*').fadeOut('slow');
 
     if(index_%2==0)
     {
