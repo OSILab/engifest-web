@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		</head>
+	<body bgcolor="gray">
+		<div class="demo" id="eventname">
+		    <h2>Event Name</h2>    
+        	<div class="show-off" id="ename"></div>
+        </div>
+        <div class="demo" id="eventinfo">
+		    <h2>Info</h2>
+        	<div class="show-off" id="einfo"></div>
+        </div>
+        <div class="demo" id="eventgallery">
+		     <h2>Gallery</h2>	
+        	<div class="show-off" id="egallery"></div>
+        </div>
+    
+
+
+        
+
+   
+	</body>
+</html>
