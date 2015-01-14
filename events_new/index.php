@@ -1,5 +1,5 @@
 <?php require_once("includes/connection.php"); ?>
-<?php require_once("includes/functionss.php"); ?>
+
 <?php
 			
 			$query = "SELECT * from events      
@@ -34,27 +34,49 @@
 	<title>Engifest 15 Event Timeline</title>	
 </head>
 <body>
-	
+	<div id="img4" >
+    <img  id="q" class="i" src="mark.png">
+	</div>
     <div class="bg" id="first">
     </div>
-   <div class="pattern">
-    </div>
-<!--<div id="map" >
-    <img src="Map.jpg">
-</div>-->
- <div class="header">
- 	
- </div>
- <div id="big-container" class="shrink">
- 	<div class="big">
- 		 <div class="cover">
+	 
+
+	<div class="pattern"></div>
+	<div id="map" style="background-image: url(dj.jpg);"></div>
+	
+
+	<div class="header">
+	 	
+	</div>
+	<div id="big-container">
+		<div class="big">
+		   <div class="close" id="bc"><a href="javascript: void(0)"><img src="close.png"></a></div>
+			 <div class="cover" style="">
+			 <img id="inrImg" src="">
 		     <div class="co">	
 		     </div>
 		  </div>
-		  <div class="desc"></div>
+		  <div class="info">
+		  	<div class="date">
+		  		
+		  	</div>
+		  	<div class="desc">
+		  	
+		  	</div>
+		  	<div class="links">
+		  	<ul>
+		  	<li><a href="#">Register</a></li>
+		  	<li><a href="#">Visit Event Page</a></li>
+		  	</ul>
+		  	</div>
+		  </div>
 		</div> 
-	</div>	
 	</div>
+
+	<div id="map-container"></div>
+	<div id="map-container_overlay"></div>
+	<div id="map_blob"></div>
+</div>
  <div id="wrapper">
 	<div id="cd-timeline" class="cd-container">
 	<?php 
@@ -67,25 +89,26 @@
 			<div class="cd-timeline-img">
 				<img src="img/techie.gif" alt="Picture">
 			</div> <!-- cd-timeline-img -->
-        <a href="#" id="div{$i}" class="common">
+        
 			<div class="cd-timeline-content">
 			    <div class="event_image"><img src="{$row['img_src']}"></div>
-            <div class="overflows">
-			    <div class="overflows">
+            
+			    
 			    <div class="overlay">
 				</div>
+	
 				<div class="circ1"></div>
 				<div class="circ2"></div>
-			    <div class="see-more"></div>
-			    <div id="more" event-details="{$row['description']}"><h3>Details</h3></div>
-			</div>
-			</div>
+			    <div class="see-more" event-details='{$row['description']}' date='{$row['date']}' ename='{$row['event_name']}' event-banner='{$row['img_src_banner']}' event-location='{$row['location']}' data-locn="{$i}"></div>
+			    <div id="more" class="more"><h3>Details</h3></div>
+		
+			
 				<h2>{$row['event_name']}</h2>
 				<p>{$row['short_detail']}</p>
-				<div id="temp"></div>
+
 				<span class="cd-date">Feb 14</span>
 			</div> <!-- cd-timeline-content -->
-		</a>
+		
 		</div> <!-- cd-timeline-block -->
 _END;
 $i++;
