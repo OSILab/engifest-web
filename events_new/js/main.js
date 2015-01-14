@@ -33,6 +33,6 @@ jQuery(document).ready(function(){
 
 
 	});
-	setTimeout(demo,1000);
+	//setTimeout(demo,1000);
   
 });

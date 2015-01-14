@@ -1,132 +1,123 @@
-function funca1()
-{
-    console.log("Inside funca1");
-    var w=document.getElementById('map');
-    w.className="zoom1";
-    document.getElementById('q').className="f1";
+function mapify(backg, locn, dirn) {
+
+    if (!dirn) {
+        $("#map-container, #map-container_overlay, #map_blob").css("left", "700px");
+    } else {
+        $("#map-container, #map-container_overlay, #map_blob").css("left", "85px");
+    }
+
+    document.getElementById('map').style.backgroundImage = "url(" +backg +")";
+    $("#map-container, #map-container_overlay").show();
+    $("#map-container").css("background-size", "100% 100%");
+    $("#map-container").css("-webkit-filter", "blur(0px)");
+
+    setTimeout(function() {
+        $("#map-container").css("background-size", "200% 200%");
+        var position = "center center";
+        var left = parseInt($("#map_blob").css("left"));
+        var top = 120;
+
+        if (locn == "oat") {
+            position = '-287px -128px';
+            left += 188;
+            top += 142;
+        } else if (locn == "sportscomplex") {
+            position = '0px 0px';
+            top += 120;
+            left += 200;
+        } else if (locn == "brambedkar") {
+            position = '-180px -208px';
+            top += 136;
+            left += 198;
+        }
+        $("#map-container").css("background-position", position);
+
+        setTimeout(function() {
+            $("#map_blob").show();
+            $("#map_blob").css("width", "60px").css("height", "60px");
+            $("#map_blob").css("top", top +"px").css("left", left +"px");
+        }, 1000);
+        
+    }, 100);
 }
 
-function funca2()
-{
-    console.log("Inside funca2");
-    var w=document.getElementById('map');
-    w.className="zoom2";
-    document.getElementById('q').className="f2";
-}
-function funca3()
-{
-    console.log("Inside funca3");
-    var w=document.getElementById('map');
-    w.className="zoom3";
-    document.getElementById('q').className="f3";
-}
-function func2()
-{
-    console.log("Inside func2");
-     var w=document.getElementById('map');
-    w.className="zoomout";
-    document.getElementById('q').className="i";
+function demapify() {
+    $("#map-container, #map-container_overlay").hide();
+    $("#map-container").css("background-size", "0% 0%");
+    $("#map-container").css("background-position", "0px 0px");
+    $("#map-container").css("-webkit-filter", "blur(10px)");
+    $("#map_blob").hide();
+    $("#map_blob").css("width", "0xp").css("height", "0px");
 }
 
-// function foo()
-// {
-//     console.log("inside foo");
-//     document.getElementById('big-container').className='expand';
-// }
 
-//document.getElementById('l').onclick=func;
-// document.addEventListener('DOMContentLoaded',function(){
+$(document).ready(function() {
+    var _HIDDEN_SCROLLTOP = 0;
 
-//     document.getElementById('div1').onclick=foo();
+    $(".more").on('click', function() {
+        $(this).prev('.see-more').click();
+    });
 
-// });
+    $('.see-more').click(function(){
+        _HIDDEN_SCROLLTOP = $(document).scrollTop();
+        $("#big-container").clearQueue();
 
-// $(."see-more").click(function()
-// {
-//     var i = 0;
-//     while( (child = child.previousSibling) != null ) 
-//     i++;
-// if(i%2==0)
-// {
-//     $("#big-container").removeClass('shrink').addClass('e1Left');
-//     $("#big-container").addClass('expandLeft');
-//  }
-//  else 
-//  {
-//     $("#big-container").removeClass('shrink').addClass('e1Right');
-//     $("#big-container").addClass('expandRight');
-//  }     
-// });
-$("#div1").click(function()
-{
+        document.getElementById('wrapper').style.opacity = '0';
 
-    console.log("inside foo");
-    $("#big-container").removeClass('shrink').addClass('e1Left');
-    $("#big-container").addClass('expandLeft');
-      
+        var $this = $(this);
+        setTimeout(function() {
+            $('#wrapper').css("z-index", "-100");
+        }, 500);
+
+        setTimeout(function() {
+            mapify($this.attr('event-banner'), $this.attr('event-location'), posn % 2);
+        }, 500);
+
+        var posn = parseInt($(this).attr("data-locn")) - 1;
+
+        if(posn % 2 == 0) {
+            $("#big-container").css("left", "85px");
+        } else {   
+            $("#big-container").css("left", "700px"); 
+        }
+
+        $("#big-container").css("display", "block");  
+        $("#big-container").css("top", "85px").css("opacity", "1");
+
+        $('.desc').html($(this).attr('event-details'));
+        $('.co').html($(this).attr('ename'));
+        $('.date').html($(this).attr('date'));
+        $('#inrImg').attr("src", $(this).attr('event-banner'));
+    });
+
+    var _TRANSITION_TIME = 500;
+    $('#bc').click(function() {
+        $("#big-container").css("top", "-900px").css("opacity", "0");;
+
+        setTimeout(function() {
+            if($('#big-container').hasClass('expandLeft')) {
+                $("#big-container").removeClass('expandLeft');
+            } else {
+                $("#big-container").removeClass('expandRight'); 
+            }
+
+            $(".co").empty();
+            $(".date").empty();
+            $(".desc").empty();
+
+        }, _TRANSITION_TIME);
+
+        // $("#wrapper").show();
+        $('#wrapper').css("z-index", "0");
+        document.getElementById('wrapper').style.opacity = '1';
+        
+        // zoomout();
+        demapify();
+        $('html,body').animate({
+            scrollTop: _HIDDEN_SCROLLTOP},
+            _TRANSITION_TIME);
+
+    });
+
+    $('.header').slideDown(500);
 });
-$("#div2").click(function()
-{
-
-    console.log("inside foo");
-    $("#big-container").removeClass('shrink').addClass('e1Right');
-    $("#big-container").addClass('expandRight');
-      
-});$("#div3").click(function()
-{
-
-    console.log("inside foo");
-    $("#big-container").removeClass('shrink').addClass('e1Left');
-    $("#big-container").addClass('expandLeft');
-      
-});$("#div4").click(function()
-{
-
-    console.log("inside foo");
-    $("#big-container").removeClass('shrink').addClass('e1Right');
-    $("#big-container").addClass('expandRight');
-      
-});$("#div5").click(function()
-{
-
-    console.log("inside foo");
-    $("#big-container").removeClass('shrink').addClass('e1Left');
-    $("#big-container").addClass('expandLeft');
-      
-});$("#div6").click(function()
-{
-
-    console.log("inside foo");
-    $("#big-container").removeClass('shrink').addClass('e1Right');
-    $("#big-container").addClass('expandRight');
-      
-});$("#div7").click(function()
-{
-
-    console.log("inside foo");
-    $("#big-container").removeClass('shrink').addClass('e1Left');
-    $("#big-container").addClass('expandLeft');
-      
-});$("#div8").click(function()
-{
-
-    console.log("inside foo");
-    $("#big-container").removeClass('shrink').addClass('e1Right');
-    $("#big-container").addClass('expandRight');
-      
-}); 
-document.getElementById('div1').onclick=funca1;
-document.getElementById('div2').onclick=funca2;
-// document.getElementById('div3').addEventListener('mouseover',funca3);
-// document.getElementById('div4').addEventListener('mouseover',funca1);
-// document.getElementById('div5').addEventListener('mouseover',funca2);
-// document.getElementById('div6').addEventListener('mouseover',funca3);
-
-
-// document.getElementById('div1').addEventListener('mouseout',func2);
-// document.getElementById('div2').addEventListener('mouseout',func2);
-// document.getElementById('div3').addEventListener('mouseout',func2);
-
-// document.getElementById('div4').addEventListener('mouseout',func2);
-// document.getElementById('div5').addEventListener('mouseout',func2);
-// document.getElementById('div6').addEventListener('mouseout',func2);

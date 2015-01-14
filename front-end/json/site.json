@@ -115,7 +115,7 @@ callback({
     "sequences":[
         {
             "route":"assets/img/map/route1.svg",
-            "intro":"assets/videos/sequence1/sq1scene1",
+            "intro":"assets/videos/sequence1/engisit",
             "transition":"assets/videos/sequence1/sq1scene2",
             "timeToRec":"20",
             "timeToUpload":"32",
