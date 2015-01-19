@@ -42,11 +42,11 @@
 	 
 
 	<div class="pattern"></div>
-	<div id="map" style="background-image: url(dj.jpg);"></div>
+	<div id="map" style="background-image: url(1.png);"></div>
 	
 
-	<div class="header">
-	 	
+	<div class="header" style="color: white">
+	 	<h2>Engifest 2015</h2>
 	</div>
 	<div id="big-container">
 		<div class="big">
@@ -74,7 +74,6 @@
 	</div>
 
 	<div id="map-container"></div>
-	<div id="map-container_overlay"></div>
 	<div id="map_blob"></div>
 </div>
  <div id="wrapper">

@@ -1,0 +1,175 @@
+#bane94-innerpage
+{
+	position:fixed;
+	z-index:9999;
+	left: 0px;
+	top:0;left:-2500px;
+	width:100%;height:100%;margin:0;
+	background-color:#000000;
+	
+	background-position:0 -200px;
+	background-repeat:no-repeat;
+	background-size:100% auto;
+	overflow-x:hidden;
+	
+}
+#bane94-innerpage .bane94-fullspan
+{
+	width:100%;
+	margin:0;
+	float:left;
+}
+#bane94-innerpage .bane94-fullspan .bane94-title
+{
+	font-family: 'algerian';
+	font-size: 48pt;
+	color: white;
+	margin:10px auto;
+	text-align:center;
+}
+#bane94-innerpage .bane94_workspace
+{
+	margin-top: 100px;
+	width: 100%;
+	min-height: 100px;
+}
+#bane94-innerpage .bane94-halfspan
+{
+	margin:0;
+}
+#bane94-innerpage  .left
+{
+	width: 25%;
+	margin: 10px;
+	float:left;
+	//background-color: transparent;
+}
+#bane94-innerpage .left .base94-buttons{
+	position:relative;
+	left:32%;
+	top:40px;
+}
+#bane94-innerpage .left .bane94-image
+{
+	background-repeat: no-repeat;
+	width: 355px;
+	height: 282px;
+	margin: 10px 10px;
+	background-image: url(../img/loading_small.gif);
+}
+#bane94-innerpage .left .bane94-image img
+{
+	width: 355px;
+	height: 316px;
+}
+/*
+#base94-innerpage .left .bane94-toolbar .base94-timeline
+{
+	width: 400px;
+	font-size: 30pt;
+	color: white;
+	font-family: 'pf_synch_proregular';
+}
+*/
+#bane94-innerpage .right
+{
+	width: 65%;
+    height:420px;
+	margin: 10px 20px 0px 0px;
+	float:right;
+	background-color: rgba(0,0,0,0.3);  
+	font-family: 'verdana';    
+	color: white;
+	overflow: hidden;
+}
+#bane94-innerpage .right .bane94-timeline
+{
+	width:40%;
+	float:right;
+	margin:5px;
+	text-align: right;
+	padding:5px;
+	font-family: 'verdana';    color: rgb(255,255,0);
+	font-size:20pt;
+	font-weight:bold;
+	
+}
+#bane94-innerpage .right .bane94-description
+{
+	width:98%;
+	height:80%;
+	padding:10px;
+	float:left;
+	overflow-x:hidden;overflow-y:auto;
+}
+.bane94-gallery
+{
+	margin:5px;
+	width:98%;
+	padding:5px;
+	background-color: rgba(0,0,0,0.3);  border-radius: 11px;  
+	font-family: 'pf_synch_proregular';    color: white; white-space: nowrap;
+	
+}
+.bane94-gallery div
+{
+	display:inline;
+	margin-right:5px;
+}
+.bane94-gallery a img
+{
+	width:150px;
+}
+#bane94-innerpage .bottom
+{
+	position:relative;
+	bottom:0;
+}
+#bane94-backbutton {
+	cursor: pointer;
+	background-image: url(../img/xjf39.png);
+	background-position: -96px -307px;
+	border-radius: 30px;
+	width: 54px;
+	height: 50px;
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	opacity: .6;
+	-webkit-transition: opacity .5s;
+}
+#bane94-backbutton:hover
+{
+	opacity: 1;
+}
+.bane94-timeline{display: block;}
+.bane94-tabs
+{
+	display: block;
+	padding: 45px 0px 0px 15px;
+	border-bottom: rgba(255,255,0,.5) 1px solid;
+}
+.bane94-tabs div
+{
+	display: inline-block;
+	border-bottom: none;
+	padding: 10px 30px 5px 30px;
+	background: rgba(247,11,89,.5);
+	border-radius: 5px 5px 0px 0px;
+}
+.bane94-tabs div:hover{
+	background: rgba(0,0,0,.8);
+	cursor: pointer;
+}
+.bane94-tabs div.active{background: black;}
+.bane94-tab-description{
+	display: none;
+	font-size: 14pt;
+	//font-family: 'pf_din_text_cond_proregular';
+	font-family: 'Poiret One';
+}
+
+.base94-buttons input:hover{
+	background-color: black;
+}
+

@@ -103,10 +103,10 @@ Main components
 
 #map-container {
   position: fixed;
-  width:500px;
-  top: 120px;
-  background-image: url(../Map.jpg);
-  background-size: 0% 0%;
+  width: 738px;
+  top: 145px;
+  background-image: url(../map_white_new.png);
+  background-size: 100% 100%;
   background-position: 0px 0px;
   left: 700px;
   display: none;
@@ -122,23 +122,11 @@ Main components
   top: 120px;
   background-image: url(../mark.png);
   background-size: 100% 100%;
-  left: 700px;
+  left: 600px;
   display: none;
   z-index: 12;
   height: 0px;
   -webkit-transition: width .5s, height .5s ease-out;
-}
-#map-container_overlay {
-  position: fixed;
-  width:500px;
-  top: 120px;
-  background-image: url(../overlay_map.png);
-  background-size: cover;
-  left: 700px;
-  display: none;
-  z-index: 11;
-  height: 400px;
-  opacity: .2;
 }
 
 .big{
@@ -284,15 +272,14 @@ li{
   }
 
 
-  .header{
-    position: fixed;
+.header{
+    position: static;
     top: 0px;
     width: 100%;
     height: 90px;
     background-color: black;
     opacity: 1;
     z-index: 1100;
-    display: none;
   }
 
 @-webkit-keyframes cd-bounce-1 {
@@ -1129,7 +1116,7 @@ margin:20px;
   width: 100%;
   overflow: hidden;
   position: relative;
-  top: 90px;
+  top: 0px;
   -webkit-transition: opacity .5s ease-out;
   -o-transition: opacity .5s ease-out;
   -moz-transition: opacity .5s ease-out;

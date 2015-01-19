@@ -1,9 +1,37 @@
+var e = .7;
+var g = -1;
+var u = 10;
+var t;
+var freq = 50;
+
+function resetParams() {
+    e = .7;
+    g = -1;
+    u = 10;
+}
+
+function bounce(y, ty) {
+    var stop = false;
+    u += g;
+    ty -= u;
+    $("#map_blob").css("top", ty +"px");
+    if (ty >= y) {
+        u = -1 * e * u;
+        if (Math.abs(u) < .2)
+            stop = true;
+    }
+
+    if (!stop) t =setTimeout(function() {
+        bounce(y, ty);  
+    }, freq);
+}
+
 function mapify(backg, locn, dirn) {
 
     if (!dirn) {
-        $("#map-container, #map-container_overlay, #map_blob").css("left", "700px");
+        $("#map-container, #map-container_overlay, #map_blob").css("left", "600px");
     } else {
-        $("#map-container, #map-container_overlay, #map_blob").css("left", "85px");
+        $("#map-container, #map-container_overlay, #map_blob").css("left", "-45px");
     }
 
     document.getElementById('map').style.backgroundImage = "url(" +backg +")";
@@ -11,30 +39,38 @@ function mapify(backg, locn, dirn) {
     $("#map-container").css("background-size", "100% 100%");
 
     setTimeout(function() {
-        $("#map-container").css("background-size", "200% 200%");
         var position = "center center";
         var left = parseInt($("#map_blob").css("left"));
         var top = 120;
 
         if (locn == "oat") {
-            position = '-287px -128px';
-            left += 188;
-            top += 142;
+            position = '-180px -67px';
+            left += 327;
+            top += 105;
         } else if (locn == "sportscomplex") {
-            position = '0px 0px';
-            top += 120;
-            left += 200;
+            position = '-130px -47px';
+            top += 69;
+            left += 207;
         } else if (locn == "brambedkar") {
-            position = '-180px -208px';
-            top += 136;
-            left += 198;
+            position = '-152px -86px';
+            top += 133;
+            left += 285;
+        } else if (locn == "admin") {
+            position = '-141px -65px';
+            top += 115;
+            left += 245;
         }
+
+        $("#map-container").css("background-size", "150% 150%");
         $("#map-container").css("background-position", position);
 
         setTimeout(function() {
             $("#map_blob").show();
             $("#map_blob").css("width", "60px").css("height", "60px");
             $("#map_blob").css("top", top +"px").css("left", left +"px");
+
+            resetParams();
+            bounce(top, top);
         }, 1000);
         
     }, 100);
@@ -42,10 +78,12 @@ function mapify(backg, locn, dirn) {
 
 function demapify() {
     $("#map-container, #map-container_overlay").hide();
-    $("#map-container").css("background-size", "0% 0%");
+    $("#map-container").css("background-size", "100% 100%");
     $("#map-container").css("background-position", "0px 0px");
     $("#map_blob").hide();
     $("#map_blob").css("width", "0xp").css("height", "0px");
+
+    clearTimeout(t);
 }
 
 

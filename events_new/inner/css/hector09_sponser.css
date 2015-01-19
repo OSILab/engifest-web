@@ -1,0 +1,116 @@
+.hector09_sponser
+	{
+		width: 100%;
+		padding: 0px;
+		min-height: 500px;
+		float: right;
+	}
+	.hector09_title
+	{
+		width: 25%;
+		height: 450px;
+		float: right;
+		margin: 10px;
+	}
+	.hector09_cotitle
+	{
+		width: 24%;
+		height: 450px;
+		float: right;
+		margin: 10px;
+		overflow: hidden;
+		position: relative
+	}
+	.hector09_cotitle div
+	{
+		width: 100%;
+		height: 50%;
+		overflow: hidden;
+		position: relative;
+	}
+	.hector09_nontitle
+	{
+		width: 42%;
+		height: 450px;
+		float: right;
+		margin: 10px;
+		margin-right: 0px;
+		overflow: hidden;
+	}
+	.hector09_nontitle div
+	{
+		width: 49%;
+		height: 50%;
+		float: left;
+		overflow: hidden;
+		margin: 2px;
+		position: relative;
+	}
+	.hector09_nontitle div.h09not_1 img
+	{
+		position: absolute;
+		-webkit-transition: left .5s,top .5s,z-index .5s;
+		-o-transition: left .5s,top .5s,z-index .5s;
+		-moz-transition: left .5s,top .5s,z-index .5s;
+		transition: left .5s,top .5s,z-index .5s;
+		//background: white;
+	
+	}
+	.hector09_nontitle div.h09not_2 img
+	{
+		position: absolute;
+		-webkit-transition: left .4s,top .4s,z-index .4s;
+		-o-transition: left .4s,top .4s,z-index .4s;
+		-moz-transition: left .4s,top .4s,z-index .4s;
+		transition: left .4s,top .4s,z-index .4s;
+		//background: white;
+	}
+	.hector09_nontitle div.h09not_3 img
+	{
+		position: absolute;
+		-webkit-transition: left .7s,top .7s,z-index .7s;
+		-o-transition: left .7s,top .7s,z-index .7s;
+		-moz-transition: left .7s,top .7s,z-index .7s;
+		transition: left .7s,top .7s,z-index .7s;
+		//background: white;
+	}
+	.hector09_nontitle div.h09not_4 img
+	{
+		position: absolute;
+		-webkit-transition: left .6s,top .6s,z-index .6s;
+		-o-transition: left .6s,top .6s,z-index .6s;
+		-moz-transition: left .6s,top .6s,z-index .6s;
+		transition: left .6s,top .6s,z-index .6s;
+		//background: white;
+	}
+	.hector09_cotitle .hector09_cotitle_1{margin-bottom: 2px;}
+	.hector09_cotitle .hector09_cotitle_1 img
+	{
+		width: 100%;
+		//height: 225px;
+		position: absolute;
+		-webkit-transition: top .3s ease-out;
+		-o-transition: top .3s ease-out;
+		-moz-transition: top .3s ease-out;
+		transition: top .3s ease-out;
+	}
+	.hector09_cotitle .hector09_cotitle_2 img
+	{
+		width: 100%;
+		//height: 225px;
+		position: absolute;
+		-webkit-transition: top .7s ease-out;
+		-o-transition: top .7s ease-out;
+		-moz-transition: top .7s ease-out;
+		transition: top .7s ease-out;
+	}
+	.hector09_cotitle img#cosponser1,.hector09_cotitle img#cosponser2
+	{
+		top: 0px;
+		z-index: 1;
+	}
+	.hector09_cotitle img#cosponser3,.hector09_cotitle img#cosponser4
+	{
+		top: 225px;
+		z-index: 2;
+	}
