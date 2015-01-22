@@ -1,0 +1,165 @@
+
+/* XOLIVE */
+.feedbg { position:fixed; width:100%; height:100%; top:50px; background:url(../../images/web/overview-1.jpg) no-repeat; background-size:cover; }
+#xolive { min-height:100%; background-color: black; }
+.dcsns-toolbar { overflow:inherit !important; }
+#dcsns-filter {font-size: 3em; text-transform: uppercase; font-family: 'DINcond-black'; width: 230px !important; margin:120px auto 50px; height: 50px;}
+#dcsns-filter li {height: 30px; }
+#dcsns-filter li a {padding: 10px 8px; line-height: 28px; color: white; margin-right:1px; background:none !important; color:#fff; }
+#dcsns-filter li a:hover { }
+#dcsns-filter li a .filtericon { display:inline-block; width:40px; height:35px; margin:0; background:url(../feedbtn.png) no-repeat; }
+#dcsns-filter li a .filtericon.all { background-position:0 0; }
+#dcsns-filter li a .filtericon.all:hover { background-position:0 -35px; }
+#dcsns-filter li a .filtericon.facebook { background-position:-53px 0; }
+#dcsns-filter li a .filtericon.facebook:hover { background-position:-53px -35px; }
+#dcsns-filter li a .filtericon.twitter { background-position:-106px 0; }
+#dcsns-filter li a .filtericon.twitter:hover { background-position:-106px -35px; }
+#dcsns-filter li a .filtericon.instagram { background-position:-162px 0; }
+#dcsns-filter li a .filtericon.instagram:hover { background-position:-162px -35px; }
+.stream li .section-thumb { margin:0 !important; }
+
+/* TWEAKS */
+
+.large_container {max-width: 1400px; margin: -100px auto 0;}
+
+#xolive .stream li {
+	border:none;
+	background-color: #fff;
+	-webkit-box-shadow:inherit !important;
+	-moz-box-shadow: inherit !important;
+    box-shadow: inherit !important;
+    font-size: 1em;
+    padding: 0 0 35px 0;
+    width: 300px;
+	margin: 0 25px 25px 0;
+	line-height: 23px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;	
+	top: 5px !important;
+	left: 5px !important;
+}
+
+
+.stream {font-size: 1.3em;}
+.stream li .icon {height: auto;}
+.stream li.dcsns-youtube,
+.stream li.dcsns-vimeo,
+.stream li.dcsns-pinterest,
+.stream li.dcsns-instagram {padding-top: 0;}
+
+.stream li .section-title, 
+.stream li .section-text, 
+.stream li .section-user {padding: 10px; }
+
+.stream li.dcsns-twitter .section-thumb {margin-left: 10px; margin-top: 10px !important;}
+.stream li.dcsns-twitter .section-thumb img {border: 1px solid #dddddd; margin-left:10px; margin-right:10px; }
+
+.stream li.dcsns-pinterest .section-thumb,
+.stream li.dcsns-youtube .section-thumb,
+.stream li.dcsns-vimeo .section-thumb,
+.stream li.dcsns-instagram .section-thumb {width: 102%; max-width: inherit !important; float: none;}
+
+.stream li.dcsns-vimeo .section-thumb img,
+.stream li.dcsns-youtube .section-thumb img,
+.stream li.dcsns-instagram .section-thumb img {max-width: inherit !important; width: 100%; }
+
+.stream li.dcsns-vimeo .section-user,
+.stream li.dcsns-pinterest .section-user,
+.stream li.dcsns-instagram .section-user,
+.stream li.dcsns-facebook .section-user,
+.stream li.dcsns-youtube .section-user
+ {margin-left: 10px; margin-bottom: 15px;}
+
+.dcsns-pinterest .section-text,
+.dcsns-pinterest .section-user,
+.dcsns-pinterest .section-share
+ {display: none !important;}
+ 
+.dcsns-facebook .section-user,
+.dcsns-facebook .section-share
+ {display: none !important;}
+ 
+.dcsns-vimeo .section-user,
+.dcsns-vimeo .section-share,
+.dcsns-vimeo .section-text,
+.dcsns-vimeo .section-title
+ {display: none !important;}
+ 
+.dcsns-youtube .section-user,
+.dcsns-youtube .section-share,
+ {display: none !important;}
+
+/* COLORED VERSION
+.stream li.dcsns-instagram,
+.stream li.dcsns-facebook,
+.stream li.dcsns-facebook .section-title a,
+.stream li.dcsns-vimeo .section-title a {color: white;}
+
+.stream li.dcsns-youtube {background: #DF1F1C;}
+.stream li.dcsns-pinterest {background: #faee35;}
+.stream li.dcsns-vimeo {background: #4EBAFF;}
+.stream li.dcsns-twitter {background: #4ec2dc;}
+.stream li.dcsns-instagram {background: #413A33;}
+.stream li.dcsns-facebook {background: #3b5998; }
+*/
+
+.stream li .inner {}
+.stream li .section-intro {height: 30px; font-family: 'DINcond-black'; font-size: 3em; background: rgb(249, 248, 22) !important; color: black !important; }
+.stream li .section-intro a {font-size: 1.4em; text-transform: uppercase; color:black !important; }
+
+
+/* GROEN, VIDEO */
+.stream li.dcsns-youtube .section-intro,
+.stream li.dcsns-vimeo .section-intro 
+ { background-color: #1db24b !important; }
+
+.stream li.dcsns-vimeo .section-user a,
+.stream li.dcsns-youtube .section-user a 
+ { color: #1db24b;}
+
+
+
+/* GEEL, PHOTOS */
+.stream li.dcsns-pinterest .section-intro, .filter .f-pinterest a:hover, 
+.stream li.dcsns-instagram .section-intro, .filter .f-instagram a:hover
+ { background-color: #eee !important; color: #000 !important; }
+
+.stream li.dcsns-instagram { }
+.stream li.dcsns-youtube {  color: white; }
+.stream li.dcsns-youtube a {color: white !important;}
+
+/*
+.stream li.dcsns-youtube,
+.stream li.dcsns-vimeo {background: #ceefd8;}
+.stream li.dcsns-pinterest,
+.stream li.dcsns-instagram {background: #f2f0d2;}
+.stream li.dcsns-twitter {background: #c0eaf2;}
+.stream li.dcsns-facebook {background: #d3dbef; }
+*/
+
+
+/* WHITE VERSION */
+.stream li.dcsns-instagram,
+.stream li.dcsns-facebook,
+.stream li.dcsns-vimeo .section-title a {color: black;}
+
+.stream li.dcsns-facebook .section-title a,
+.stream li.dcsns-instagram .section-intro a {color: white; }
+
+.stream li.dcsns-instagram .section-thumb img {margin-bottom: 15px !important;}
+
+
+.daretobe_text {background: white; padding: 20px 0 40px; height: auto; }
+.xolive_title {background: white; padding: 40px 0 10px; margin: -30px 0 0; }
+.xolive_title h1 span {color: #ea226c; font-size: 2.2em !important;}
+.xolive_title h1 { color: #ea226c; font-size: 2.5em !important;  line-height: 30px; }
+.daretobe_text .container {-webkit-column-count: 3; -webkit-column-gap: 50px; -webkit-column-break-before: always;}
+.daretobe_text p {color: black;}
+.daretobe_text p.pink {color: #ee1b68;}
+
+.daretobe_balk {clear: both; height: 30px; background: url(../../images/web/xodaretobe.png) no-repeat 10px 3px #e52571; margin-top: -15px; margin-bottom: 15px; float: left; width: 300px; }
+
+footer {padding: 50px 0 100px;}
+
+
+
+

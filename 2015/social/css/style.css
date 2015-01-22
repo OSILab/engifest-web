@@ -1,0 +1,215 @@
+@import url("http://hello.myfonts.net/count/2bbb87");
+
+  
+@font-face {font-family: 'MrAlex-Bold';src: url('../assets/webfonts/2BBB87_0_0.eot');src: url('../assets/webfonts/2BBB87_0_0d41d.eot?#iefix') format('embedded-opentype'),url('../assets/webfonts/2BBB87_0_0.woff') format('woff'),url('../assets/webfonts/2BBB87_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'MrAlex-Regular';src: url('../assets/webfonts/2BBB87_1_0.eot');src: url('../assets/webfonts/2BBB87_1_0d41d.eot?#iefix') format('embedded-opentype'),url('../assets/webfonts/2BBB87_1_0.woff') format('woff'),url('../assets/webfonts/2BBB87_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'MrAlex-Light';src: url('../assets/webfonts/2BBB87_2_0.eot');src: url('../assets/webfonts/2BBB87_2_0d41d.eot?#iefix') format('embedded-opentype'),url('../assets/webfonts/2BBB87_2_0.woff') format('woff'),url('../assets/webfonts/2BBB87_2_0.ttf') format('truetype');}
+ 
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('../assets/webfonts/BebasNeue-webfontd41d.eot?') format('eot'), 
+       url('../assets/webfonts/BebasNeue-webfont.woff') format('woff'), 
+       url('../assets/webfonts/BebasNeue-webfont.ttf')  format('truetype'),
+       url('../assets/webfonts/BebasNeue-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'DS-Digi';
+  src: url('../assets/webfonts/ds-digi/ds-digi-webfontd41d.eot?') format('eot'), 
+       url('../assets/webfonts/ds-digi/ds-digi-webfont.woff') format('woff'), 
+       url('../assets/webfonts/ds-digi/ds-digi-webfont.ttf')  format('truetype'),
+       url('../assets/webfonts/ds-digi/ds-digi-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'DS-DigiI';
+  src: url('../assets/webfonts/ds-digi/ds-digii-webfontd41d.eot?') format('eot'), 
+       url('../assets/webfonts/ds-digi/ds-digii-webfont.woff') format('woff'), 
+       url('../assets/webfonts/ds-digi/ds-digii-webfont.ttf')  format('truetype'),
+       url('../assets/webfonts/ds-digi/ds-digii-webfont.svg') format('svg');
+}
+
+
+@font-face {
+  font-family: 'Futura';
+  src: url('../assets/webfonts/futuraextended-webfontd41d.eot?') format('eot'), 
+       url('../assets/webfonts/futuraextended-webfont.woff') format('woff'), 
+       url('../assets/webfonts/futuraextended-webfont.ttf')  format('truetype'),
+       url('../assets/webfonts/futuraextended-webfont.svg') format('svg');
+}
+
+*{
+    -webkit-font-smoothing: antialiased;
+    
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+}
+
+img,a{
+  border:none;
+  text-decoration:none;
+}
+
+.homePage a{
+  color:#ffffff;
+  opacity:0.3;
+}
+
+.share a{
+  opacity:1 !important;
+}
+
+.postPartners a{
+  opacity:1 !important;
+}
+
+.homePage a:hover{
+  opacity:1;
+}
+
+body{
+	margin:0;
+	padding:0;
+  background-color:#000000;
+  cursor:url(../assets/img/cursor/empty.png),default;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+#ie-wrapper{
+	position:absolute;
+	width:625px;
+	height:100px;
+	margin-top:-160px;
+	margin-left:-312px;
+	top:50%;
+	left:50%;
+}
+
+#ie-wrapper h1{
+	font-family: Arial,sans-serif;
+	font-size:21px;
+	color:#ffffff;
+	text-align:center;
+}
+
+#ie-wrapper a,#ie-wrapper p{
+	color:#be231e;
+	font-family: Arial,sans-serif;
+	font-size:18px;
+	text-align:center;
+	text-decoration: none;
+}
+
+#social-widget .sp-viewport{
+  padding-right:0px !important;
+  padding-left:0px !important;
+}
+#social-widget .sp-scrollbar {
+  width: 3px;
+  cursor: pointer;
+  right:0px !important;
+  left:auto !important;
+}
+#social-widget .sp-scrollbar .sp-thumb {
+  background-color: #4607be;
+  -webkit-transition: height 0.2s ease-in-out;
+  -moz-transition: height 0.2s ease-in-out;
+  -ms-transition: height 0.2s ease-in-out;
+  -o-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+}
+
+.navItem {
+  -webkit-transform-style: preserve-3d;
+}
+
+.navActive {
+  color: #f9f816!important;
+}
+
+.castContentBlock { 
+  position: relative;
+}
+
+.castContentBlock span{
+  position: absolute;
+}
+
+.castTitle {
+  color: yellow;
+}
+
+/* ------ SCROLL PANEL ----- */
+
+.sp-viewport{
+}
+.sp-scrollbar {
+  width: 3px;
+  cursor: pointer;
+  left:-20px !important;
+}
+
+.sp-scrollbar .sp-thumb {
+  background-color: #fffde1;
+  -webkit-transition: height 0.2s ease-in-out;
+  -moz-transition: height 0.2s ease-in-out;
+  -ms-transition: height 0.2s ease-in-out;
+  -o-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+}
+
+.sp-scrollbar.active .sp-thumb {
+  background-color: #ffffff;
+}
+
+#social-widget .sp-viewport{
+  padding-right:0px !important;
+  padding-left:0px !important;
+}
+#social-widget .sp-scrollbar {
+  width: 3px;
+  cursor: pointer;
+  right:0px !important;
+  left:auto !important;
+}
+#social-widget .sp-scrollbar .sp-thumb {
+  background-color: #4607be;
+  -webkit-transition: height 0.2s ease-in-out;
+  -moz-transition: height 0.2s ease-in-out;
+  -ms-transition: height 0.2s ease-in-out;
+  -o-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+}
+
+
+/*agegate*/
+
+#age-gate {
+  font-family: 'Bebas';
+  letter-spacing: 1px;
+}
+
+#age-gate #verify {
+
+  width: 130px;
+  height: 40px;
+  margin-top: 30px;
+  background: yellow;
+  color: black;
+  line-height: 44px;
+  left: 182px;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+
+
+
+
+

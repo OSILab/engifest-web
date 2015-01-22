@@ -1,0 +1,298 @@
+callback({
+    "pages":[
+        {
+            "type":"about",
+            "info":[{
+                "title":"SPONSORS",
+                "quotes":[{
+                    "quote":"<span>Engifest 2014 rocked!</span>",
+                    "byImage": "assets/img/about/quotes/pepsi.png"
+                },
+                {
+                    "quote":"<span>Meticulous planning, excellent implementation!</span>",
+                    "byImage": "assets/img/about/quotes/asus.png"
+                },
+                {
+                    "quote":"<span>Awesome work by the Engifest'14 team!</span>",
+                    "byImage": "assets/img/about/quotes/converse.png"
+                },  
+                {
+                    "quote":"<span>Engifest 2014 rocked!</span>",
+                    "byImage": "assets/img/about/quotes/pepsi.png"
+                },    
+                {
+                    "quote":"<span>Energetic! Enigmatic!!</span>",
+                    "byImage": "assets/img/about/quotes/evernote.png"
+                },{
+                    "quote":"<span>Very excited!</span>",
+                    "byImage": "assets/img/about/quotes/jabong.png"
+                }]    
+            },
+            {
+                "title":"ABOUT ENGIFEST",
+                "synopsis":"The annual cultural festival of Delhi Technological University, Engifest is a four day cultural extravaganza held in the month of February."    
+            },
+            {
+                "title":"EVENTS",
+                "synopsis":""    
+            }
+                   ]            
+        },
+        {
+            "type":"videos",
+            "videos":[
+                {
+                    "navTitle":"GLIMPSES",
+                    "ytID":"hXfsg6i1glk",
+                    "title":"Glimpses Engifest 2014",
+                    "hashUrl":"hXfsg6i1glk"
+                }
+               ]
+        },
+        
+        {
+            "type":"gallery",
+            "title":"LAST YEAR'S STILLS",
+            "images":[
+            {
+                "big":"assets/img/gallery/04.jpg"
+            },{
+                "big":"assets/img/gallery/01.jpg"
+            },{
+                "big":"assets/img/gallery/02.jpg"
+            },{
+                "big":"assets/img/gallery/05.jpg"
+            },{
+                "big":"assets/img/gallery/03.jpg"
+            }]
+        },
+        {
+            "type":"Stars",
+            "actors":[{
+                "id":"_",
+                "name":" Coming Soon",
+                "character":""
+            }]
+        },
+        {
+            "type":"Register",
+            "title":"TICKETS & SHOWTIMES"
+        },
+        {
+            "type":"tumblr",
+            "title":"<span style=\"display:block\">Social Wall</span><span></span>",
+            "instagramTitle":" ",
+            "instagramLink":"http://instagram.com/engifest"
+        }
+    ],
+
+    "share" : {
+            "twitter":"Visit the official #engi15 site, the annual cultural festival of DTU.",
+            "caption":"The annual cultural festival of Delhi Technological University, Engifest is a four day cultural extravaganza held in the month of February. Engifest comes as a breath of fresh air, bridging the gap between technical education and creativity. It is a much-needed wave, rich in cultural diversity, which rejuvenates, refreshes and titillates the soul and gives creativity a chance to flourish.",
+            "tumblrFacebook":"Visit the official #engi15 site, the annual cultural festival of DTU.",
+            "pinterest" : "Visit the official #engi15 site, the annual cultural festival of DTU."
+    },
+    "sequences":[
+        {
+            "route":"assets/img/map/route1.svg",
+            "intro":"assets/videos/sequence1/sq1scene4",
+            "transition":"assets/videos/sequence1/sq1scene3",
+            "timeToRec":"20",
+            "timeToUpload":"32",
+            
+            "end":{
+                "again":"assets/videos/again2",
+                "loop1":{
+                    "video":"assets/videos/sequence1/end/loop1",
+                    "videoBig":"assets/videos/sequence1/end/loopBig1",
+                    "length":"14",
+                    "width":"50",
+                    "height":"58.5",
+                    "top":"0",
+                    "left":"0",
+                    "animate":"left"
+                },
+                "loop2":{
+                    "video":"assets/videos/sequence1/end/loop3",
+                    "videoBig":"assets/videos/sequence1/end/loopBig3",
+                    "length":"27",
+                    "width":"50",
+                    "height":"100",
+                    "left":"50",
+                    "top":"0",
+                    "animate":"right"
+                },
+                "loop3":{
+                    "video":"assets/videos/sequence1/end/loop2",
+                    "videoBig":"assets/videos/sequence1/end/loopBig2",
+                    "length":"36",
+                    "width":"50",
+                    "height":"41.5",
+                    "left":"0",
+                    "top":"58.5",
+                    "animate":"right"
+                }
+            },
+            "nav":[
+                {"copy":"San Julian St and E 9th St", "type":"arrowStraight","perc":"0.09"},
+                {"copy":"San Julian St and E 7th St", "type":"arrowStraight","perc":"0.23"},
+                {"copy":"San Julian St and E 6th St", "type":"arrowLeft","perc":"0.4"},
+                {"copy":"Wall St and E 6th St", "type":"arrowRight","perc":"0.56"},
+                {"copy":"Wall St and Winston St", "type":"arrowLeft","perc":"0.61"},
+                {"copy":"Winston St and S Los Angeles St", "type":"arrowRight","perc":"0.76"},
+                {"copy":"Winston St and S Los Angeles St", "type":"arrowRight","perc":"0.8"},
+                {"copy":"Your destination is on the right", "type":"dest","perc":"0.85"}
+            ],
+            "quotes":[
+                {
+                    "img":"assets/img/exp/quotes/quote6.png",
+                    "start":"1",
+                    "end":"5",
+                    "left":"67",
+                    "top":"72"
+                },
+                {
+                    "img":"assets/img/exp/quotes/quote1.png",
+                    "start":"6",
+                    "end":"11.5",
+                    "left":"27",
+                    "top":"72"
+                },
+                {
+                    "img":"assets/img/exp/quotes/quote2.png",
+                    "start":"15",
+                    "end":"20.35",
+                    "left":"67",
+                    "top":"18"
+                },
+                {
+                    "img":"assets/img/exp/quotes/quote3.png",
+                    "start":"25",
+                    "end":"28.4",
+                    "left":"50",
+                    "top":"77"
+                },
+                {
+                    "img":"assets/img/exp/quotes/quote4.png",
+                    "start":"32.5",
+                    "end":"38.25",
+                    "left":"57",
+                    "top":"20"
+                },
+                {
+                    "img":"assets/img/exp/quotes/quote5.png",
+                    "start":"38.5",
+                    "end":"44",
+                    "left":"25",
+                    "top":"77"
+                },
+
+            ]
+        },
+        {
+            "route":"assets/img/map/route2.svg",
+            "intro":"assets/videos/sequence2/sq2scene1",
+            "transition":"assets/videos/sequence2/sq2scene2",
+            "timeToRec":"23",
+            "timeToUpload":"34",
+            
+            "end":{
+                "again":"assets/videos/again3",
+                "loop1":{
+                    "video":"assets/videos/sequence2/end/loop1",
+                    "videoBig":"assets/videos/sequence2/end/loopBig1",
+                    "length":"12",
+                    "width":"50",
+                    "height":"100",
+                    "top":"0",
+                    "left":"0",
+                    "animate":"left"
+                },
+                "loop2":{
+                    "video":"assets/videos/sequence2/end/loop2",
+                    "videoBig":"assets/videos/sequence2/end/loopBig2",
+                    "length":"4",
+                    "width":"50",
+                    "height":"37",
+                    "left":"50",
+                    "top":"0",
+                    "animate":"right"
+                },
+                "loop3":{
+                    "video":"assets/videos/sequence2/end/loop3",
+                    "videoBig":"assets/videos/sequence2/end/loopBig3",
+                    "length":"18",
+                    "width":"50",
+                    "height":"63",
+                    "left":"50",
+                    "top":"37",
+                    "animate":"left"
+                }
+            },
+            "nav":[
+                {"copy":"E 29th St and S Central Ave", "type":"arrowLeft","perc":"0.09"},
+                {"copy":"S Central Ave and E 28th St", "type":"arrowLeft","perc":"0.23"},
+                {"copy":"E 28th St and Griffith Ave", "type":"arrowRight","perc":"0.4"},
+                {"copy":"Griffith Ave and E Adams Blvd", "type":"arrowLeft","perc":"0.56"},
+                {"copy":"E Adams Blvd and Stanford Ave", "type":"arrowRight","perc":"0.61"},
+                {"copy":"Stanford Ave and E Washington Blvd", "type":"arrowLeft","perc":"0.76"},
+                {"copy":"Your destination is on the left", "type":"dest","perc":"0.76"}
+            ]
+        },
+        {
+            "route":"assets/img/map/route3.svg",
+            "intro":"assets/videos/sequence3/sq3scene1",
+            "transition":"assets/videos/sequence3/sq3scene2",
+            "timeToRec":"36",
+            "timeToUpload":"53",
+           
+            "end":{
+                "again":"assets/videos/again1",
+                "loop1":{
+                    "video":"assets/videos/sequence3/end/loop1",
+                    "videoBig":"assets/videos/sequence3/end/loopBig1",
+                    "length":"7",
+                    "width":"50",
+                    "height":"100",
+                    "top":"0",
+                    "left":"0",
+                    "animate":"left"
+                },
+                "loop2":{
+                    "video":"assets/videos/sequence3/end/loop2",
+                    "videoBig":"assets/videos/sequence3/end/loopBig2",
+                    "length":"7",
+                    "width":"50",
+                    "height":"49",
+                    "left":"50",
+                    "top":"0",
+                    "animate":"right"
+                },
+                "loop3":{
+                    "video":"assets/videos/sequence3/end/loop3",
+                    "videoBig":"assets/videos/sequence3/end/loopBig3",
+                    "length":"5",
+                    "width":"50",
+                    "height":"51",
+                    "left":"50",
+                    "top":"49",
+                    "animate":"left"
+                }
+            },
+            "nav":[
+                {"copy":"E 12 St and Hooper Ave", "type":"arrowRight","perc":"0.09"},
+                {"copy":"Hooper Ave and E 14th St", "type":"arrowLeft","perc":"0.23"},
+                {"copy":"E 14 St and S Alameda St", "type":"arrowLeft","perc":"0.4"},
+                {"copy":"S Alameda St and E Olympic Blvd", "type":"arrowLeft","perc":"0.56"},
+                {"copy":"E Olympic Blvd and S Central Ave", "type":"arrowRight","perc":"0.61"},
+                {"copy":"Your destination is on the left", "type":"dest","perc":"0.76"},
+                {"copy":"Your destination is on the left", "type":"dest","perc":"0.76"},
+                {"copy":"Your destination is on the left", "type":"dest","perc":"0.76"},
+                {"copy":"Your destination is on the left", "type":"dest","perc":"0.76"}
+            ]
+        },
+
+    ]
+})
+
+

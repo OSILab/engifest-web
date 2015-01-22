@@ -1,0 +1,97 @@
+body{background: black}
+	#hector09_menu {
+		color: white;
+		font-family: Consolas;
+		width: 140px;
+		position: fixed;
+		left: 20px;
+		z-index: 4000;
+		opacity: .2;
+		-webkit-transition: opacity .2s;
+		-moz-transition: opacity .2s;
+		-o-transition: opacity .2s;
+		transition: opacity .2s;
+		bottom: -270px;
+	}
+	#hector09_menu:hover{opacity: 1;}
+	.hector09_menutab{
+		display: block;
+		width: 100%;
+		margin-top: 1px;
+		border-left: 4px silver solid;
+		padding: 2px 10px 2px 10px;
+		cursor: pointer;
+		-webkit-transition: color .7s,border-left .7s;
+		-o-transition: color .7s,border-left .7s;
+		-moz-transition: color .7s,border-left .7s;
+		transition: color .7s,border-left .7s;
+		position: relative;
+	}
+	.hector09_menutab span{display: none;position: absolute;top: 10px;}
+	.hector09_menutab:hover>span{display: inline}
+	.hector09_menutab:hover
+	{
+		border-left: 4px solid #f70b59;
+		color: #f70b59;
+	}
+	.hector09_icons{width: 32px;margin: 0px;display: inline;
+		-webkit-transition: opacity .7s;
+		-moz-transition: opacity .7s;
+		-o-transition: opacity .7s;
+		transition: opacity .7s;
+		margin-right: 7px;
+	}
+	.hector09_clearfix{height: 10px;width: 10px;display: block}
+	.hector09_ads
+	{
+		width: 100%;
+		height: 300px;
+	}
+	.hector09_noborder,.hector09_noborder:hover{border: none}
+	.hector09_audio_controls_ON{opacity: .2}
+	.hector09_slide
+	{
+		width: 709px;
+		height: 400px;
+		margin: 0px;
+		background-image: url(img/h09_bg1.png);
+		background-repeat: no-repeat;
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		-webkit-transition: background-image .5s ease-out;
+		-o-transition: background-image .5s ease-out;
+		-moz-transition: background-image .5s ease-out;
+		transition: background-image .5s ease-out;
+		z-index: 100;
+	}
+	.hector09_slide_detail
+	{
+		height: 400px;
+		margin: 0px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		background: rgba(255,255,255,0.6);
+		color: black;
+		width: 70%;
+		cursor: pointer;
+		-webkit-transition: opacity .4s ease-out;
+		-o-transition: opacity .4s ease-out;
+		-moz-transition: opacity .4s ease-out;
+		transition: opacity .4s ease-out;
+		overflow: hidden;
+		font-size:14pt;
+		font-family: Comic Sans MS;
+		-webkit-box-shadow: 0px 0px 50px rgb(255,255,255);
+		-o-box-shadow: 0px 0px 50px rgb(255,255,255);
+		-moz-box-shadow: 0px 0px 50px rgb(255,255,255);
+		box-shadow: 0px 0px 50px rgb(255,255,255);
+		padding: 10px;
+	}
+	.hector09_slide_detail span{
+	font-weight: bold;
+	color: #cb0948;
+	}
+	.hector09_slide:hover>.hector09_slide_detail{opacity: .2;}
+	.hector09_slide_detail_data{padding: 10px;}
