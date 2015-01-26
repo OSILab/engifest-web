@@ -30,7 +30,6 @@
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 	<script src="jquery-1.11.1.js"></script>
-	<script src="neww.js"></script>
 	<title>Engifest 15 Event Timeline</title>	
 </head>
 <body>
@@ -42,11 +41,11 @@
 	 
 
 	<div class="pattern"></div>
-	<div id="map" style="background-image: url(1.png);"></div>
+	<div id="map" style="background-image: url(pics/1.png);"></div>
 	
 
 	<div class="header" style="color: white">
-	    <center><img src="header.png" id="head-image"></center>
+	    <center><img src="header.png" id="head-image" style='width: 100px;position: relative;top: 10px;z-index: 10;'></center>
 	</div>
 	<div id="big-container">
 		<div class="big">
