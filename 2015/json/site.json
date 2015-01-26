@@ -101,7 +101,7 @@ callback({
             "timeToUpload":"32",
             
             "end":{
-                "again":"assets/videos/again2",
+                "again":"",
                 "loop1":{
                     "video":"assets/videos/sequence1/end/loop1",
                     "videoBig":"assets/videos/sequence1/end/loopBig1",

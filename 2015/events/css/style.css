@@ -768,6 +768,10 @@ li{
     -webkit-transition: background-image .2s ease-out;
     transition: background-image .2s ease-out;
     background-size: 100% 100%; 
+    -webkit-filter: blur(3px);
+    -o-filter: blur(3px);
+    -moz-filter: blur(3px);
+    filter: blur(3px);
 }
 
 

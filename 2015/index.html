@@ -25,6 +25,23 @@
         <link rel="stylesheet" href="css/royalslider.css" type='text/css'>
 
         <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '637532079638975',
+            xfbml      : true,
+            version    : 'v2.1'
+          });
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+        <script>
             var baseURL = 'http://localhost/~minhazav/engifest/';
             if (location.hash != '' || location.hash.length != 0) {
               location.href = baseURL;
@@ -51,6 +68,6 @@
           <script src="js/main.min.js"></script>
       <![endif]>
     </body>
-
+<a href="./events/" target="new" class="_event_link_new_tab" style="display:none"></a>
 
 </html>

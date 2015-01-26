@@ -123,6 +123,7 @@ $(document).ready(function() {
         $('.desc').html($(this).attr('event-details'));
         $('.co').html($(this).attr('ename'));
         $('.date').html($(this).attr('date'));
+        $('.link_to_inner').attr('href', './inner/?ename=' +$(this).attr('ename'));
         $('#inrImg').attr("src", $(this).attr('event-banner'));
     });
 

@@ -46,7 +46,7 @@
 	
 
 	<div class="header" style="color: white">
-	 	<h2>Engifest 2015</h2>
+	    <center><img src="header.png" id="head-image"></center>
 	</div>
 	<div id="big-container">
 		<div class="big">
@@ -65,8 +65,8 @@
 		  	</div>
 		  	<div class="links">
 		  	<ul>
-		  	<li><a href="#">Register</a></li>
-		  	<li><a href="#">Visit Event Page</a></li>
+		  	<li><a href="inner/reg.php">Register</a></li>
+		  	<li><a href="#" class="link_to_inner">Visit Event Page</a></li>
 		  	</ul>
 		  	</div>
 		  </div>

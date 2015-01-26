@@ -4,7 +4,7 @@ require("constants.php");
 <?php
 $baseurl = "http://www.engifest.dce.edu/";
 
-	if(isset($_GET['key']) && !empty($_GET['key']))
+	if(isset($_GET['ename']) && !empty($_GET['ename']))
 	{
 		$db = new mysqli(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
 
@@ -14,15 +14,8 @@ $baseurl = "http://www.engifest.dce.edu/";
 		else
 		{
 
-			$key = mysql_real_escape_string($_GET['key']);
-			if (!intval($key)) {
-				header('HTTP/1.0 403 Forbidden');
-				echo "<h2 style='text-align:center; margin-top: 100px'>403, Forbidden! Don't try playing with us!</h2>";
-				exit;
-			}
-
-
-			$query = "SELECT `event_name`,`gal_ban`,`gal_img`, `short_detail` , `description` , `date` FROM events WHERE `event_id`='$key' ";
+			$ename = mysql_real_escape_string($_GET['ename']);
+			$query = "SELECT `event_name`,`gal_ban`,`gal_img`, `short_detail` , `description` , `date` FROM events WHERE `event_name`='$ename' ";
 			if(!$result = $db->query($query)){
 							die('There was an error running the query [' . $db->error . ']');
 			}
@@ -222,7 +215,7 @@ $baseurl = "http://www.engifest.dce.edu/";
 					<?php if(isset($date)) echo $date; ?>
 				</div>
 				<div class="bane94-tabs">
-					<?php if(isset($tab)) echo $tab ; ?>
+					
 				</div>
 				<div class="bane94-description">
 					<?php if(isset($description)) echo $description; ?>
